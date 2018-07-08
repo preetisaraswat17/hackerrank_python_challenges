@@ -17,7 +17,8 @@
 --------------------------------------------------------Solution-------------------------------------------------------------------
 
 import re
-pattern=r'(\w)\1+' #(alphanumeric)repetation(\1)
+pattern=r'([a-zA-Z0-9])\1+' #(alphanumeric)repetation(\1)
 x=input()
 m = re.findall(pattern,x)
-print(m[0])
+print(m[0] if m else -1)
+
