@@ -25,7 +25,7 @@ import re
 n=int(input())
 for i in range(n):
     num=input()
-    m=re.match(r'[7|8|9]\d{9}',num)
+    m=re.match(r'^[7|8|9]\d{9}$',num)
     if m:
         print('YES')
     else:
