@@ -1,0 +1,11 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+
+#pow(x, y) is equal to xy
+#pow(x, y, z) is equal to xy % z
+
+final=pow(a,b)+pow(c,d)
+
+print(final)
